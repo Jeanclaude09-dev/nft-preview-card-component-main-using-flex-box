@@ -1,0 +1,102 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /*====== PRIMARY-COLOR ======*/
+  --Blue500: hsl(215, 51%, 70%);
+  --Cyan400: hsl(178, 100%, 50%);
+
+  /*====== NEUTRAL-COLOR ======*/
+  --Blue950: hsl(217, 54%, 11%); /*main BG*/
+  --Blue900: hsl(216, 50%, 16%); /*card BG*/
+  --Blue800: hsl(215, 32%, 27%); /*line*/
+  --White: hsl(0, 0%, 100%);
+  /*====== FONT ======*/
+  font-size: 62.5%;
+  --font-size: 1.8rem;
+  --font-family: "Outfit", sans-serif;
+}
+
+@font-face {
+  font-family: "Outfit";
+  src: url(Assets/Fonts/Outfit/static/Outfit-Regular.ttf) format("truetype");
+}
+
+body {
+  display: grid;
+  place-items: center;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--Blue950);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: var(--font-size);
+  color: var(--White);
+  font-family: var(--font-family);
+}
+
+.card {
+  width: 35rem;
+  padding: 2rem;
+  background-color: var(--Blue900);
+  border-radius: 1rem;
+}
+.head p {
+  margin-bottom: 1rem;
+  font-size: 2.4rem;
+}
+.head span {
+  color: var(--Blue500);
+}
+.equilibrium {
+  width: 100%;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.stat {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1rem;
+}
+.stat div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+hr {
+  color: var(--Blue500);
+  margin: 1.5rem 0;
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.avatar img {
+  width: 5rem;
+  border: 0.2rem solid var(--White);
+  border-radius: 50%;
+}
+.avatar span {
+  color: var(--Blue500);
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
