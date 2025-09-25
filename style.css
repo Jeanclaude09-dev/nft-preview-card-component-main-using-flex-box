@@ -53,6 +53,11 @@ main {
 .head p {
   margin-bottom: 1rem;
   font-size: 2.4rem;
+  transition: color 0.3s;
+}
+.head p:hover {
+  color: var(--Cyan400);
+  cursor: pointer;
 }
 .head span {
   color: var(--Blue500);
@@ -61,6 +66,10 @@ main {
   width: 100%;
   height: auto;
   margin-bottom: 1rem;
+}
+.equilibrium:hover {
+  color: var(--Cyan400);
+  background-image: url(images/icon-view.svg);
 }
 
 .stat {
@@ -99,4 +108,10 @@ hr {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 60rem) {
+  .card {
+    width: 30rem;
+  }
 }
